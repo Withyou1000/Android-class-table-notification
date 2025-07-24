@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--   ~ Copyright (C) 2017 Baidu, Inc. All Rights Reserved. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baidu.ocr" >
+
+    <uses-sdk android:minSdkVersion="24" />
+
+    <application>
+    </application>
+
+</manifest>

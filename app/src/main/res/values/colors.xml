@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="primary">#00BCD4</color>
+    <color name="primaryLight">#BBDEFB</color>
+    <color name="primaryDark">#00BCD4</color>
+
+<color name="bk">#FF5722</color>
+    <!-- 清新薄荷绿（通识课/公共课） -->
+    <color name="course_color_orange_red">#B2DFDB</color>
+
+    <!-- 活力珊瑚橙（体育课/户外活动） -->
+    <color name="course_color_bright_green">#FFB74D</color>
+
+    <!-- 静谧浅灰蓝（理论课/自习时段） -->
+    <color name="course_color_blue_purple">#CFD8DC</color>
+
+    <!-- 柔光樱花粉（艺术课/选修课） -->
+    <color name="course_color_golden_yellow">#F8BBD0</color>
+
+    <!-- 浅灰蓝（编程课/实验课） -->
+    <color name="course_color_sky_blue">#A7C7E7</color>
+
+    <!-- 明亮柠檬黄（早课/晨间学习） -->
+    <color name="course_color_pink">#FFF176</color>
+
+    <!-- 浅紫色（选修课/跨学科课程） -->
+    <color name="course_color_light_green">#C8A2C8</color>
+
+    <!-- 浅蓝灰（职业规划课/讲座） -->
+    <color name="course_color_beige">#B0C4DE</color>
+
+    <!-- 自然原木色（生态课/农林类课程） -->
+    <color name="course_color_deep_blue_purple">#D7CCC8</color>
+
+    <!-- 浅蓝绿（双学位课程/联合教学） -->
+    <color name="course_color_steel_blue">#A2DED0</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+</resources>

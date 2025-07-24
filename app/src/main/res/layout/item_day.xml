@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.classtable.custom.FocusedView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="22dp"
+    android:layout_height="22dp"
+    android:textSize="14dp"
+    android:gravity="center"
+    android:id="@+id/day"
+    />

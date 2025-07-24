@@ -1,0 +1,12 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--   ~ Copyright (C) 2017 Baidu, Inc. All Rights Reserved. -->
+3<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+4    package="com.baidu.ocr" >
+5
+6    <uses-sdk android:minSdkVersion="24" />
+7
+8    <application>
+8-->D:\Anriod_Studio_Code\ClassTable\ocr_ui\src\main\AndroidManifest.xml:7:5-9:19
+9    </application>
+10
+11</manifest>
