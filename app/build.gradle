@@ -1,0 +1,62 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+}
+
+android {
+
+    namespace 'com.example.classtable'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.classtable"
+        minSdk 24
+        targetSdk 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应 cpu 类型的 .so 库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : "com.example.classtable",
+                JPUSH_APPKEY : "7710fcecac2b2dad8f82c5d4", //JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation files('libs\\ocr-sdk.jar')
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'io.github.lucksiege:pictureselector:v3.11.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'cn.jiguang.sdk:jpush:5.6.0'        // 必选，此处以JPush 5.6.0 版本为例，注意：5.0.0 版本开始可以自动拉取 JCore 包，无需另外配置
+    implementation 'cn.jiguang.sdk:joperate:2.0.2'     // 可选，集成极光分析SDK后，即可支持行为触发推送消息、推送转化率统计，用户行为分析和用户标签等功能
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation project(':ocr_ui')
+}

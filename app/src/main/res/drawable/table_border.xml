@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="2dp"
+        android:color="#000000" /> <!-- 边框宽度和颜色 -->
+    <solid android:color="#FFFFFF" /> <!-- 内部填充颜色，这里设置为白色，可根据需要调整 -->
+</shape>
